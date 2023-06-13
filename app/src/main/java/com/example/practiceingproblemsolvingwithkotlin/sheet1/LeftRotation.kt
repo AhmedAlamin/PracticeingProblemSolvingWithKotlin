@@ -8,10 +8,9 @@ fun main() {
 
     var (size, d) = readLine()?.split(" ") ?: listOf(0, 0)
 
-    // 1, 2 ,3 ,4 ,5
+
+    // this how to declare an list and fill it using readline()
     var list = mutableListOf<Int>()
-
-
     readLine()?.split(" ")?.forEachIndexed { index, s ->
 
         if (index < size.toString().toInt()) {
