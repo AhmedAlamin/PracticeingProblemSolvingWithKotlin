@@ -7,13 +7,13 @@ fun main() {
     }.take(1).toMutableList()
 
 
-    var list = mutableListOf<Int>()
-    var sum = 0
+    var list = mutableListOf<Long>()
+    var sum:Long = 0
 
    for ( i in 0 until 5){
        for (j in 0 until 5){
            if (j != i) {
-               sum+= line[0][j].toInt()
+               sum+= line[0][j].toString().toLong()
            }
        }
 
@@ -22,6 +22,6 @@ fun main() {
 
    }
 
-  print(list.min().toString() + " "+list.max().toString())
+  print(list.min().toString() +" "+list.max().toString())
 
 }

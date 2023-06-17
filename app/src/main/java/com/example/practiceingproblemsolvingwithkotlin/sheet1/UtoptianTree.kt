@@ -10,10 +10,10 @@ fun main() {
 
 
     var start =1
-    for ((index,_) in lines.withIndex()){
-        for (i in 0 until lines[index].toInt()){
-            if (i % 2==0) start*=2
-            else start++
+    for ((index,_) in  lines.withIndex()){
+        for (i in 1 .. lines[index].toInt()){
+            if (i % 2 == 1) start *= 2
+            else start +=1
         }
         lines[index] = start.toString()
         start = 1
@@ -23,3 +23,5 @@ fun main() {
         println(i)
     }
 }
+
+
