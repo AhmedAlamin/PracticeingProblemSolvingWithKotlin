@@ -38,5 +38,9 @@ fun main() {
     }.take(1).toMutableList()
 
 
+    // #6 making 2d mutable list
+//    val matrix: MutableList<MutableList<Int>> = MutableList(rows) { MutableList(cols) { 0 } }
+
+
 
 }
