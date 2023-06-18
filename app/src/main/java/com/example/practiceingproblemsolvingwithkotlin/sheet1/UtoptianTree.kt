@@ -2,26 +2,27 @@ package com.example.practiceingproblemsolvingwithkotlin.sheet1
 
 fun main() {
 
-    val n = readLine()?.firstOrNull()?:0
-
-    val lines = generateSequence(readLine()){
-        readLine()
-    }.take(n.toString().toInt()).toMutableList()
+    val n = readLine()?.toIntOrNull()?: 0
 
 
-    var start =1
-    for ((index,_) in  lines.withIndex()){
-        for (i in 1 .. lines[index].toInt()){
-            if (i % 2 == 1) start *= 2
-            else start +=1
+    var list = mutableListOf<Int>()
+    repeat(n){
+        list.add(readLine()?.toIntOrNull()?:0)
+    }
+
+    var start = 1
+    for (i in 0 until list.size){
+        for (j in 1 .. list[i]){
+            if (j%2 ==1) start*=2
+            else start++
         }
-        lines[index] = start.toString()
+        list[i] = start
         start = 1
     }
-
-    for (i in lines){
-        println(i)
+    repeat(n){
+        println(list[it])
     }
+
 }
 
 
