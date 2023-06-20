@@ -15,7 +15,6 @@ fun romanToInt(s: String): Int {
     var sum = 0
     for (index in s.indices) {
 
-
         if (index + 1 < s.length && constants[s[index].toString()]!! < constants[s[index + 1].toString()]!!) {
             sum -= constants[s[index].toString()]!!
 
