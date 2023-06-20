@@ -12,7 +12,6 @@ fun romanToInt(s: String): Int {
     constants["D"] = 500
     constants["M"] = 1000
 
-
     var sum = 0
     for (index in s.indices) {
 
