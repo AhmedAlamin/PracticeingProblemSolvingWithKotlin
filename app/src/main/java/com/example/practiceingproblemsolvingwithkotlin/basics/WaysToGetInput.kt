@@ -39,8 +39,9 @@ fun main() {
 
 
     // #6 making 2d mutable list
-//    val matrix: MutableList<MutableList<Int>> = MutableList(rows) { MutableList(cols) { 0 } }
+    // val matrix: MutableList<MutableList<Int>> = MutableList(rows) { MutableList(cols) { 0 } }
 
 
+    // Total sum of the array Law = arr.size *(arr.size+1)/2
 
 }
