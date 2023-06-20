@@ -24,4 +24,5 @@ fun main() {
             +String.format("%.6f",(numOfNegative/n)) +"\n"
             + String.format("%.6f",(numOfZeros/n)) + "\n")
 
+
 }
