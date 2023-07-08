@@ -2,7 +2,7 @@ package com.example.practiceingproblemsolvingwithkotlin.sheet1
 
 import kotlin.math.max
 
-class Solution {
+
     fun maxProfit(prices: IntArray): Int {
 
 
@@ -22,4 +22,3 @@ class Solution {
 
 
     }
-}
